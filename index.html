@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr">
+    <head>
+		<title>jQuery Equaliser plugin</title>
+		<meta charset="utf-8">
+		<link href="common.css" rel="stylesheet" media="screen" >
+		<!--[if lte IE 7]>
+			<style>
+				#inline-block-example  li { 
+					display: inline;
+					zoom: 1;
+				}
+			</style>
+		<![endif]-->
+		<script src="jquery.js"></script>
+		<script src="jquery.equalise.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#inline-block-example').equaliser({equalise: ['.introduction', '.example', 'h3']});
+			});
+		</script>
+    </head>
+    <body>
+		<h1>jQuery Equaliser plugin</h1>
+		<p>Example of the jQuery Equaliser plugin. Equalising against classnames and tag names, auto height enabled.</p>
+		<p>Plugin parameters include:</p>
+		<ul>
+			<li>columns: Number of columns in the group, default 'auto', can be set to an integer.</li>
+			<li>rows: Number of rows in the group, default 'auto', can be set to an integer.</li>
+			<li>equalise: The elements in the group to equalise position, an array of classnames and tag names.</li>
+			<li>equaliseMethod: The method to equalise position, uses standard CSS construct. Defaults to 'margin-top', could be 'padding-top'.</li>
+			<li>setHeight: Boolean value, whether of not equalise the height of the groups child containers.</li>
+		</ul>
+		<ul id="inline-block-example">
+			<li>
+				<img src="images/mercury.jpg" alt="Mercury">
+				<h2>Lorem ipsum dolor.</h2>
+				<p class="introduction">Lorem ipsum dolor sit amet.</p>
+				<p class="example">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<h3>End</h3>
+			</li>
+			<li>
+				<img src="images/venus.jpg" alt="Venus">
+				<h2>Lorem ipsum.</h2>
+				<p class="example">Lorem ipsum dolor sit amet.</p>
+				<h3>End</h3>
+			</li>
+			<li>
+				<img src="images/earth.jpg" alt="Earth">
+				<h2>Lorem ipsum.</h2>
+				<p class="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="example">Lorem ipsum dolor sit amet.</p>
+				<h3>End</h3>
+			</li>
+			<li>
+				<img src="images/moon.jpg" alt="Moon">
+				<h2>Lorem ipsum dolor.</h2>
+				<p class="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="example">Lorem ipsum dolor sit amet.</p>
+				<h3>End</h3>
+			</li>
+			<li>
+				<img src="images/mars.jpg" alt="Mars">
+				<h2>Lorem ipsum.</h2>
+				<p class="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<h3>End</h3>
+			</li>
+			<li>
+				<img src="images/sedna.jpg" alt="Sedna">
+				<h2>Lorem ipsum dolor.</h2>
+				<p class="introduction">Lorem ipsum dolor sit amet.</p>
+				<p class="example">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare porttitor pellentesque.</p>
+				<h3>End</h3>
+			</li>
+			<li>
+				<img src="images/jupiter.jpg" alt="Jupiter">
+				<h2>Lorem ipsum.</h2>
+				<p class="example">Lorem ipsum dolor sit amet.</p>
+				<h3>End</h3>
+			</li>
+			<li>
+				<img src="images/saturn.jpg" alt="Saturn">
+				<h2>Lorem ipsum.</h2>
+				<p class="introduction">Lorem ipsum dolor sit amet.</p>
+				<p class="example">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<h3>End</h3>
+			</li>			
+		</ul>
+		<p>Images courtesy of NASA.</p>
+    </body>
+</html>

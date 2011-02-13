@@ -1,0 +1,62 @@
+/*!
+ *	jQuery Equaliser plugin
+ *	Styles used for plugin example
+ *
+ *	Structure
+ *	---------
+ *	1.	Common elements
+ *	2.	Cross browser inline block
+ *
+ */
+
+/*
+ *	1.	Common elements
+ *
+ */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 10px;
+	font-size: 12px;
+}
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+}
+h3 {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/*
+ *	2.	Cross browser inline block
+ *
+ */
+
+#inline-block-example {
+	width: 400px;
+	word-spacing: -3px;
+	margin: 0;
+	padding: 0;
+}
+#inline-block-example  li { 
+	list-style: none;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border: 1px solid #DDD7D7;
+	display: inline-block;
+	padding: 0;
+	margin: 0 10px 10px 0;
+	vertical-align: top;
+	word-spacing: 0;
+	width: 120px;
+}
+#inline-block-example h2,
+#inline-block-example h3,
+#inline-block-example h4,
+#inline-block-example p {
+	margin: 5px;
+	padding: 5px;
+}
