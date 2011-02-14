@@ -6,7 +6,7 @@
  *
  */
 (function($){
-	/*!
+	/*
 	 *	Equaliser function. Returns the element passed to it for chainability.
 	 *	Tests if columns and rows are set by user or calculated on width of parent > child elements.
 	 *	Triggers initialising method. 
@@ -35,7 +35,7 @@
 			$.fn.equaliser.methods.init();
 		});
 	};
-	/*!
+	/*
 	 *	Default options, can be extend by options passed to the function.
 	 *
 	 */
@@ -46,12 +46,12 @@
 		equaliseMethod: 'margin-top',
 		setHeight: true	
 	};
-	/*!
+	/*
 	 *	Additional methods that can be called by the equalise function.
 	 *
 	 */
 	$.fn.equaliser.methods = {
-		/*!
+		/*
 		 *	Initialising method.
 		 *	Sets start and finish point for each row based on iteration of complete group.
 		 *	Boolean trigger of position and auto height method.
@@ -72,7 +72,7 @@
 				}
 			}
 		},
-		/*!
+		/*
 		 *	Gets the max height for each row.
 		 *
 		 */
@@ -84,7 +84,7 @@
 			}
 			return max;
 		},
-		/*!
+		/*
 		 *	For each row adds padding to the bottom of the element to equalise the heights.
 		 *
 		 */	
@@ -96,7 +96,7 @@
 				$(children[i]).last().css('padding-bottom', difference);
 			}
 		},
-		/*!
+		/*
 		 *	For each row, for each element passed to the function, find the position of the element.
 		 *	Get the maximum position for the row of elements.
 		 *
@@ -116,7 +116,7 @@
 				$.fn.equaliser.methods.setPosition(attitude, start, finish);
 			});
 		},
-		/*!
+		/*
 		 *	Given the maximum position of the elements on each row, set the position of the lements to the maximum position.
 		 *	If we are resetting the margin, add any existing margin to the calculation.
 		 *
