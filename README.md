@@ -6,17 +6,13 @@ Equalises the vertical height and position of an array of HTML elements within a
 
 Requires [jQuery](http://jquery.com/)  1.4 +
 
-
 ## Supported Browsers
 
-Internet Explorer 6 +
-
-Current versions of:
-
-Firefox
-Safari
-Chrome
-Opera
+* Firefox 2.0+
+* Internet Explorer 6+
+* Safari 3+
+* Opera 9+
+* Chrome 1+
 
 ## Plugin parameters
 
@@ -77,18 +73,6 @@ Equal heights with .example vertically positioned equally.
 			$('#example-one').equaliser({equalise: ['.example']});
 		});
 	</script>
-
-## Links
-
-* Author:	[George Paterson](http://www.georgepaterson.com)
-* Demo:		[jQuery Equaliser plugin](http://www.georgepaterson.com)
-* Source:	[Github](http://github.com/georgepaterson/jquery-equaliser)
-
-## License
-
-Copyright 2011, [George Paterson](http://www.georgepaterson.com)
-
-Dual licensed under the MIT or GPL Version 2 licenses.
 
 ---
 	
