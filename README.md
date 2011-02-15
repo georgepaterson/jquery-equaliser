@@ -81,7 +81,6 @@ Equal heights with .example vertically positioned equally.
 ## Links
 
 * Author:	[George Paterson](http://www.georgepaterson.com)
-* Company:	[LBi](http://lbi.co.uk)
 * Demo:		[jQuery Equaliser plugin](http://www.georgepaterson.com)
 * Source:	[Github](http://github.com/georgepaterson/jquery-equaliser)
 
@@ -90,5 +89,7 @@ Equal heights with .example vertically positioned equally.
 Copyright 2011, [George Paterson](http://www.georgepaterson.com)
 
 Dual licensed under the MIT or GPL Version 2 licenses.
+
+---
 	
 Please use the [GitHub issue tracker](http://github.com/georgepaterson/jquery-equaliser/issues) for bug reports and feature requests.
