@@ -99,6 +99,7 @@
 		/*
 		 *	For each row, for each element passed to the function, find the position of the element.
 		 *	Get the maximum position for the row of elements.
+		 *	There is some flexibility for missing elements but a height previous sibling before a missing element may cause an overlap.
 		 *
 		 */
 		position: function(start, finish) {	
