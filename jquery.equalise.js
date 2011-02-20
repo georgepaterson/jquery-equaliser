@@ -1,5 +1,5 @@
 /*!
- * jQuery Equaliser plugin 0.1.0
+ * jQuery Equaliser plugin 1.0.0
  *
  * Copyright 2011, George Paterson
  * Dual licensed under the MIT or GPL Version 2 licenses.
