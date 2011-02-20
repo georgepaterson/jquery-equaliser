@@ -57,6 +57,8 @@ h3 {
 #inline-block-example h3,
 #inline-block-example h4,
 #inline-block-example p {
+	float: left;
+	width: 100px;
 	margin: 5px;
 	padding: 5px;
 }
