@@ -24,6 +24,12 @@ Requires [jQuery](http://jquery.com/)  1.4 +
 
 ## Usage
 
+Each direct child element of the should be vertically spaced by some method. 
+
+Commonly this can be performed by the CSS styles `float: left` and `display: inline-block`.
+
+Unordered list only used as a semantic method, HTML structure can be formed differently.
+
 Simple equal heights.
 
 	<ul id="example-one">
@@ -70,7 +76,7 @@ Equal heights with .example vertically positioned equally.
 
 	<script>
 	  	$(document).ready(function() {
-			$('#example-one').equaliser({equalise: ['.example']});
+			$('#example-two').equaliser({equalise: ['.example']});
 		});
 	</script>
 
