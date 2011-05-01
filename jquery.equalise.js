@@ -13,6 +13,11 @@
 	 *
 	 */
 	$.fn.equaliser = function(options) {
+		/*
+		 * Merge defaults and options in to settings.
+		 * If no options uses defaults.
+		 *
+		 */
 		if (options) {
 			settings = $.extend({}, $.fn.equaliser.defaults, options);
 		}
