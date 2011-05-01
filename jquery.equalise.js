@@ -16,6 +16,9 @@
 		if (options) {
 			settings = $.extend({}, $.fn.equaliser.defaults, options);
 		}
+		else {
+			settings = $.fn.imageviewer.defaults;
+		}
 		return this.each(function() {
 			children = $('> *', this);
 			if (settings.columns === 'auto') {
