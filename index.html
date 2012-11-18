@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jquery-equaliser by georgepaterson</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jquery-equaliser</h1>
+        <p>Equal height and positioning jQuery plugin</p>
+
+        <p class="view"><a href="https://github.com/georgepaterson/jquery-equaliser">View the Project on GitHub <small>georgepaterson/jquery-equaliser</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/georgepaterson/jquery-equaliser/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/georgepaterson/jquery-equaliser/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/georgepaterson/jquery-equaliser">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1><a href="http://www.georgepaterson.com">jQuery Equaliser plugin</a></h1>
+
+<p>Equalises the vertical height and position of an array of HTML elements within a given parent element.</p>
+
+<h2>Dependencies</h2>
+
+<p>Requires <a href="http://jquery.com/">jQuery</a>  1.4 +</p>
+
+<h2>Supported Browsers</h2>
+
+<ul>
+<li>Firefox 2.0+</li>
+<li>Internet Explorer 6+</li>
+<li>Safari 3+</li>
+<li>Opera 9+</li>
+<li>Chrome 1+</li>
+</ul><h2>Plugin parameters</h2>
+
+<ul>
+<li>columns: Number of columns in the group, default 'auto', can be set to an integer.</li>
+<li>rows: Number of rows in the group, default 'auto', can be set to an integer.</li>
+<li>equalise: The elements in the group to equalise position, an array of classnames and tag names.</li>
+<li>equaliseMethod: The method to equalise position, uses standard CSS construct. Defaults to 'margin-top', could be 'padding-top'.</li>
+<li>setHeight: Boolean value, whether of not equalise the height of the groups child containers.</li>
+</ul><h2>Usage</h2>
+
+<p>Each direct child element of the should be vertically spaced by some method. </p>
+
+<p>Commonly this can be performed by the CSS styles <code>float: left</code> and <code>display: inline-block</code>.</p>
+
+<p>Unordered list only used as a semantic method, HTML structure can be formed differently.</p>
+
+<p>Simple equal heights.</p>
+
+<pre><code>&lt;ul id="example-one"&gt;
+    &lt;li&gt;
+        &lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Lorem ipsum.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        $('#example-one').equaliser();
+    });
+&lt;/script&gt;
+</code></pre>
+
+<p>Equal heights with .example vertically positioned equally.</p>
+
+<pre><code>&lt;ul id="example-two"&gt;
+    &lt;li&gt;
+        &lt;p&gt;Lorem ipsum dolor.&lt;/p&gt;
+        &lt;p class="example"&gt;Lorem ipsum.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+        &lt;p class="example"&gt;Lorem ipsum.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Lorem ipsum.&lt;/p&gt;
+        &lt;p class="example"&gt;Lorem ipsum.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
+        &lt;p class="example"&gt;Lorem ipsum.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script&gt;
+    $(document).ready(function() {
+        $('#example-two').equaliser({equalise: ['.example']});
+    });
+&lt;/script&gt;
+</code></pre>
+
+<hr><p>Please use the <a href="http://github.com/georgepaterson/jquery-equaliser/issues">GitHub issue tracker</a> for bug reports and feature requests.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/georgepaterson">georgepaterson</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
